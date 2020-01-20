@@ -3,7 +3,9 @@ package com.bank.repository.impl;
 import com.bank.domain.Account;
 import com.bank.repository.AccountRepository;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 public class AccountRepositoryImpl implements AccountRepository {
     //
@@ -13,13 +15,13 @@ public class AccountRepositoryImpl implements AccountRepository {
     }
 
     @Override
-    public Account findById(Integer id) {
-        return null;
+    public Optional<Account> findById(Integer id) {
+        return Optional.empty();
     }
 
     @Override
     public List<Account> findAll() {
-        return null;
+        return Collections.emptyList();
     }
 
     @Override

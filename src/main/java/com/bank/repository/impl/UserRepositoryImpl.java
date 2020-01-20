@@ -6,13 +6,14 @@ import com.bank.repository.UserRepository;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public class UserRepositoryImpl implements UserRepository {
     private final Map<Integer, User> userIdToUser = new HashMap<>();
 
     @Override
-    public User findByEmail(String email) {
-        return null;
+    public Optional<User> findByEmail(String email) {
+        return Optional.empty();
     }
 
     @Override
@@ -21,8 +22,8 @@ public class UserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public User findById(Integer id) {
-        return null;
+    public Optional<User> findById(Integer id) {
+        return Optional.empty();
     }
 
     @Override
