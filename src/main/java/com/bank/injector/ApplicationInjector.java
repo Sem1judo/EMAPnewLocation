@@ -3,7 +3,7 @@ package com.bank.injector;
 import com.bank.domain.User;
 import com.bank.repository.UserRepository;
 import com.bank.repository.impl.UserRepositoryImpl;
-import com.bank.service.PasswordEncriptor;
+import com.bank.service.PasswordEncryption;
 import com.bank.service.UserService;
 import com.bank.service.impl.UserServiceImpl;
 import com.bank.service.validator.UserValidator;
@@ -15,7 +15,7 @@ public class ApplicationInjector {
 
     private static final Validator<User> USER_VALIDATOR = new UserValidator();
 
-    private static final PasswordEncriptor PASSWORD_ENCRIPTOR = new PasswordEncriptor();
+    private static final PasswordEncryption PASSWORD_ENCRIPTOR = new PasswordEncryption();
 
     private static final UserRepository USER_REPOSITORY = new UserRepositoryImpl();
 
